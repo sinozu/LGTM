@@ -5,4 +5,5 @@ chrome.runtime.onMessage.addListener(
       var oldMessage = textArea.val();
       textArea.val(oldMessage + "\n\n" + request.image);
     }
+    return true
 });

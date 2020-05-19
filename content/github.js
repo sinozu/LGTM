@@ -7,5 +7,6 @@ chrome.runtime.onMessage.addListener(
             brStr = "\n\n";
         }
         attr.val(oldMessage + brStr + request.image);
+        return true
     }
 );
